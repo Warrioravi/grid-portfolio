@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+
 *{
     box-sizing: border-box;
     font-family: 'Ubuntu Mono', monospace;
@@ -39,6 +42,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+#name{
+    font-family: 'Allison', cursive;
+}
 
 @media only screen and (max-width: 700px) {
     .gridparent{
@@ -71,4 +77,8 @@ body{
       position: fixed;
       top: 0;
       left: 0;
+  }
+
+  .header{
+      justify-content: left;
   }
