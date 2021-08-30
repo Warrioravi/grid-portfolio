@@ -7,7 +7,6 @@
 *{
     box-sizing: border-box;
     font-family: 'Ubuntu Mono', monospace;
-    text-align: left;
 }
 body{
     margin: 0;
@@ -24,13 +23,15 @@ body{
 .gridparent>div{
     
     height: 80vh;
-    /* background-color:lightblue ; */
+    
     font-size: calc(1vw + 15px);
     padding-left: 4vw;
     
 }
 .heading{
-    height: 10vh !important;
+    height: 15vh !important;
+    background-color: lightgray;
+    padding-right: 3vw;
 }
 
 .doublespan{
@@ -47,6 +48,23 @@ body{
 #introcontent{
     text-align: left;
 }
+.sidebar{
+    height: 100vh;
+    width: 5vw;
+    background-color: lightcoral;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header{
+    justify-content: space-between;
+    
+}
+.skills-icon{
+    padding-left: 10vw!important;
+}
+/* styling for mobile device */
 
 @media only screen and (max-width: 700px) {
     .gridparent{
@@ -75,16 +93,16 @@ body{
         text-align: center !important;
     }
   }
-  .sidebar{
-      height: 100vh;
-      width: 5vw;
-      background-color: lightcoral;
-      position: fixed;
-      top: 0;
-      left: 0;
+  .rotate {
+    animation: rotation 8s infinite linear;
   }
-
-  .header{
-      justify-content: left;
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
   }
   
