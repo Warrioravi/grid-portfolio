@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 2vh;
+    text-align: left;
+}
+body{
+    margin: 0;
+}
+.gridparent{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    column-gap: 1vw;
+    margin-left: 5vw;
+    row-gap: 1vw;
+    }
+
+
+.gridparent>div{
+    
+    height: 80vh;
+    background-color:lightblue ;
+    font-size: calc(1vw + 15px);
+    padding-left: 4vw;
+    
+}
+.heading{
+    height: 10vh !important;
+}
+
+.doublespan{
+ grid-column-start: span 2;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .gridparent{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        column-gap: 3vw;
+        margin: 3vw;
+        row-gap: 3vw;
+        text-align:center;
+    }
+    .doublespan{
+        grid-column-start: span 1;
+       }
+    .sidebar{
+        display: none;
+    }  
+    .gridparent>div{
+    
+        height: 50vh;
+        background-color:lightblue ;
+        font-size: calc(1vw + 15px);
+        padding:0;
+        
+    } 
+  }
+  .sidebar{
+      height: 100vh;
+      width: 5vw;
+      background-color: lightcoral;
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
