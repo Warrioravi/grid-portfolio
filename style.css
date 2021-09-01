@@ -72,9 +72,6 @@ body{
 .skills{
     height: 70vh;
 }
-
-
-
 .lang-icons{
     height:15%;
     width: 90%;
@@ -89,14 +86,13 @@ body{
     height: 90%;
     width: auto;
 }
-
-
-
 .skills-content{
     padding-right: 3vw;
     font-size: calc(1vw + 15px);
 }
-/* SECTION SPECIFIC SIZING AND STYLING */
+/* PROJECTS STYLING */
+
+
 
 
 
