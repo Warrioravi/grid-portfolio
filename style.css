@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Ubuntu Mono', monospace;
     transition: .5s ;
+    cursor: default;
 }
 
 body{
@@ -39,6 +40,7 @@ body{
 .main-header{
     height: 12vh;
     /* background-color: rgb(224, 219, 219); */
+    font-size: calc(1vw + 15px);
     padding-right: 3vw;
     padding-left: 3vw;
     display: flex;
@@ -104,6 +106,7 @@ body{
     padding:2vw;
     background-color: rgba(18, 125, 233,.1);
     border-radius: 10px;
+    box-shadow: 0 5px 4px rgba(97, 81, 81, 0.5);
 }
 .project:hover{
      transform: scale(105%);
@@ -158,6 +161,7 @@ body{
     }
   }
   
+  
 /* styling for mobile devices */
 
 /* @media only screen and (max-width: 700px) {
@@ -187,3 +191,80 @@ body{
         text-align: center !important;
     }
   } */
+  .social-menu ul{
+   
+  
+    left: 10%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu{
+  display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 3px 2px rgba(97, 81, 81, 0.5);
+    
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
+.resume-link{
+    
+
+}
+.resume-link:hover{
+    background-color: #076aa0c0;
+    transform: translate(0, -10%);
+    color: white;
+}
+.social-menu>a{
+    background-color: white;
+    text-decoration: none;
+    color:black;
+    font-size: 20px !important;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0 3px 2px rgba(97, 81, 81, 0.5);
+    transition: .6s;
+}
