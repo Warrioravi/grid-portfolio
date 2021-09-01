@@ -52,6 +52,8 @@ body{
     position: fixed;
     z-index: -1;
     top: 0;
+    width: 100VW;
+    left: 0;
 }
  /* INTRO STYLING */
 .intro{
@@ -91,6 +93,36 @@ body{
     font-size: calc(1vw + 15px);
 }
 /* PROJECTS STYLING */
+.project-heading{
+    height: 15vw;
+    font-size: calc(1vw + 15px);
+
+}
+.project{
+    height: 50vh;
+    margin:2vw;
+    padding:2vw;
+    background-color: rgba(18, 125, 233,.1);
+    border-radius: 10px;
+}
+.project:hover{
+     transform: scale(105%);
+     background-color:rgba(18, 125, 233,.3);
+
+}
+.more-projects{
+      height: 5vh;;
+      font-size: calc(1vw + 10px);
+      font-weight:1000 ;
+      background-color:rgba(18, 125, 233,.1) ;
+      margin: 0 2vw 0 2vw;
+      border-radius: 10px;
+}
+.more-projects:hover{
+    background-color:rgba(18, 125, 233,.3);
+    
+
+}
 
 
 
