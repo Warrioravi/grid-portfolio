@@ -3,50 +3,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 
-
+/* STYLING FOR BIG SCREEN */
 *{
     box-sizing: border-box;
     font-family: 'Ubuntu Mono', monospace;
+    transition: .5s ;
 }
+
 body{
     margin: 0;
 }
-.gridparent{
-    display: grid;
-    grid-template-columns: repeat(2 ,1fr);
-    column-gap: 1vw;
-    margin-left: 5vw;
-    row-gap: 1vw;
-    }
-
-
-.gridparent>div{
-    
-    height: 80vh;
-    
-    font-size: calc(1vw + 15px);
-    padding-left: 4vw;
-    
-}
-.heading{
-    height: 15vh !important;
-    background-color: lightgray;
-    padding-right: 3vw;
-}
-
 .doublespan{
- grid-column-start: span 2;
+    grid-column-start: span 2;
 }
-.flexcenter{
+.flexcenter
+{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#name{
-    font-family: 'Allison', cursive;
-}
-#introcontent{
-    text-align: left;
+.gridparent{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    margin-left: 5vw;
 }
 .sidebar{
     height: 100vh;
@@ -56,17 +35,104 @@ body{
     top: 0;
     left: 0;
 }
-
-.header{
+/* MAIN HEADER STYLING */
+.main-header{
+    height: 12vh;
+    /* background-color: rgb(224, 219, 219); */
+    padding-right: 3vw;
+    padding-left: 3vw;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#name{
+    font-family: 'Allison', cursive;
+}
+#wave{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+ /* INTRO STYLING */
+.intro{
+  height: 80vh;
+  font-size: calc(1vw + 15px);
+  
+}
+.intro-content{
+    padding-left: 3vw;
+    padding-top: 5vh;
+    text-align: left;
+}
+.intro-image{
+    padding-right: 5vw;
+}
+ /* SKILLS STYLING */
+
+.skills{
+    height: 70vh;
+}
+
+
+
+.lang-icons{
+    height:15%;
+    width: 90%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
     
 }
-.skills-icon{
-    padding-left: 10vw!important;
+.lang-icons>img{
+    padding:10px;
+    height: 90%;
+    width: auto;
 }
-/* styling for mobile device */
 
-@media only screen and (max-width: 700px) {
+
+
+.skills-content{
+    padding-right: 3vw;
+    font-size: calc(1vw + 15px);
+}
+/* SECTION SPECIFIC SIZING AND STYLING */
+
+
+
+
+
+
+
+
+  /* logo rotation */
+
+
+
+
+
+
+
+
+
+
+  /* ANIMATION */
+  .rotate {
+    animation: rotation 10s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+/* styling for mobile devices */
+
+/* @media only screen and (max-width: 700px) {
     .gridparent{
         display: grid;
         grid-template-columns: repeat(1 ,1fr);
@@ -92,17 +158,4 @@ body{
     #introcontent{
         text-align: center !important;
     }
-  }
-  .rotate {
-    animation: rotation 8s infinite linear;
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-  
+  } */

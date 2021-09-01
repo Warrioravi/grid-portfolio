@@ -8,8 +8,8 @@ document.querySelector("#nightmode").addEventListener('click',(e)=>{
     }
     else{
         e.currentTarget.src = "night.png";
-        document.body.style.backgroundColor = "black";
-        document.body.style.color="white";
+        document.body.style.backgroundColor = "rgb(13,17,23)";
+        document.body.style.color="#8b949e";
     }
     dark=!dark;
 })
